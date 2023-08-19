@@ -1,0 +1,46 @@
+@import '../variables/variables.scss';
+
+.login_btn{
+    display: flex;
+    flex-direction: column;
+    button{
+        margin: 1em 0;
+        padding: 1.2em;
+        width: 300px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
+        color: #FFF;
+        outline: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to right, $yellow, $pink);
+        transition: all 1s ease;
+        svg{
+            margin-left: 10px;
+            font-size: 1.1rem;
+        }
+    }
+    button:hover{
+        box-shadow: none;
+        background: linear-gradient(to left, $yellow, $pink);
+    }
+    .btn-alt{
+        background: linear-gradient(to left, $yellow, $pink);
+    }
+    .btn-alt:hover{
+        box-shadow: none;
+        background: linear-gradient(to right, $yellow, $pink);
+    }
+
+}
+
+@include for-desktop{
+    .login_btn{
+        button{
+            width: 370px;
+        }
+    }
+}
