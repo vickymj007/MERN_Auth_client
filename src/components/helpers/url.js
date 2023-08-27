@@ -1,3 +1,3 @@
-const isDevelopment = true;
+const isDevelopment = false;
 
-export const url = isDevelopment ? "http://localhost:9000" : "https://mern-authentication-89mp.onrender.com"
+export const url = isDevelopment ? "http://localhost:9000" : "https://mern-authentication-f0zp.onrender.com/"
